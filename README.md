@@ -109,6 +109,37 @@ eas build -p android --profile preview
 
 ---
 
+## 📱 Compilar para iOS
+
+Para compilar la aplicación para iOS usando Expo, sigue estos pasos:
+
+1. **Instala Expo CLI** (si no lo tienes):
+   ```bash
+   npm install -g expo-cli
+   ```
+
+2. **Inicia sesión en Expo**:
+   ```bash
+   expo login
+   ```
+
+3. **Compila para iOS** (requiere cuenta en Expo y Apple):
+   ```bash
+   npx expo export --platform ios
+   ```
+
+   O bien, usando EAS (Expo Application Services):
+   ```bash
+   npx eas build --platform ios
+   ```
+
+4. **Publica la app en TestFlight o App Store**:
+   - Para eso necesitarás una cuenta de desarrollador Apple y seguir los pasos de publicación desde [Apple Developer](https://developer.apple.com).
+
+> 💡 Asegúrate de tener configurado correctamente `eas.json` si usas EAS Build.
+
+---
+
 ## ✨ Funcionalidades
 
 - 🔍 Búsqueda en tiempo real por nombre
